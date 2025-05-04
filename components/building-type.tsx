@@ -7,7 +7,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 
 interface BuildingTypeProps {
   selectedBuildingType: string
-  setSelectedBuildingType: (type: string) => void
+  setSelectedBuildingType: React.Dispatch<React.SetStateAction<BuildingTypeKey | "">>
   onNext: () => void
   onBack: () => void
 }
