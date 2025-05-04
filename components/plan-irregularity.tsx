@@ -30,7 +30,7 @@ export default function PlanIrregularity({
     { value: "non-parallel", label: "Non-Parallel" },
     { value: "reentrant", label: "Reentrant Corner" },
     { value: "diaphragm", label: "Diaphragm" },
-    { value: "out-of-plane", label: "Out of Plane" },
+    { value: "out-of-plane", label: "Beams do not align with columns" },
   ]
 
   const handleScroll = () => {
@@ -161,8 +161,8 @@ export default function PlanIrregularity({
 
             <TabsContent value="out-of-plane" className="p-4 space-y-4 focus:outline-none">
               <Diagram
-                src="/images/plan-out-of-plane.png"
-                alt="Out of Plane Example"
+                src="/images/plan-beams-do-not-align-with-columns.png"
+                alt="Beams do not align with columns Example"
                 caption="Exterior beams do not align with columns in plan."
               />
               <p className="text-sm text-gray-700">

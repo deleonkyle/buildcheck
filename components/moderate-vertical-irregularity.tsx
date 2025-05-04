@@ -27,7 +27,7 @@ export default function ModerateVerticalIrregularity({
 
   const tabs = [
     { value: "split-level", label: "Split Level" },
-    { value: "out-of-plane", label: "Out of Plane" },
+    { value: "out-of-plane", label: "Sloping Site" },
     { value: "in-plane", label: "In Plane Offset" },
     { value: "cripple-wall", label: "Cripple Wall" },
   ]
@@ -129,8 +129,8 @@ export default function ModerateVerticalIrregularity({
 
             <TabsContent value="out-of-plane" className="p-4 space-y-4 focus:outline-none">
               <Diagram
-                src="/images/moderate-out-of-plane.png"
-                alt="Out of Plane Example"
+                src="/images/severe and moderate-sloping site.png"
+                alt="Sloping Site Example"
                 caption="Floors do not align or there is a step in the roof level."
               />
               <p className="text-sm text-gray-700">
@@ -140,7 +140,7 @@ export default function ModerateVerticalIrregularity({
 
             <TabsContent value="in-plane" className="p-4 space-y-4 focus:outline-none">
               <Diagram
-                src="/images/moderate-in-plane.png"
+                src="/images/moderate-inplane-setback.png"
                 alt="In Plane Offset Example"
                 caption="Figure (a): In-plane offset in braced frame. Figure (b): In-plane offset in shear wall buildings."
               />

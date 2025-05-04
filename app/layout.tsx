@@ -2,9 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Buildcheck',
+  description: 'Created with Next.js and Tailwind CSS',
+  generator: 'vercel',
+  applicationName: 'Buildcheck',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['Next.js', 'Tailwind CSS', 'Buildcheck'],
 }
 
 export default function RootLayout({

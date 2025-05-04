@@ -29,7 +29,7 @@ export default function SevereVerticalIrregularity({
     { value: "soft-story", label: "Soft Story" },
     { value: "setback", label: "Setback" },
     { value: "short-column", label: "Short Column" },
-    { value: "split-level", label: "Split Level" },
+    { value: "split-level", label: "Sloping Site" },
   ]
 
   const handleScroll = () => {
@@ -160,8 +160,8 @@ export default function SevereVerticalIrregularity({
 
             <TabsContent value="split-level" className="p-4 space-y-4 focus:outline-none">
               <Diagram
-                src="/images/severe-split-level.png"
-                alt="Split Level Example"
+                src="/images/severe and moderate-sloping site.png"
+                alt="Sloping Site Example"
                 caption="Figure (a): Severe for W1 buildings. Figure (b): Moderate for other building types."
               />
               <p className="text-sm text-gray-700">
