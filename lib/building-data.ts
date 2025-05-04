@@ -1,4 +1,4 @@
-export const buildingData = {
+export const BuildingData = {
   W1: {
     BasicScore: 2.1,
     SevereVertical: -0.9,

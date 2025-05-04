@@ -13,6 +13,8 @@ import Summary from "@/components/summary"
 import Introduction from "@/components/introduction"
 import { BuildingData } from "@/lib/building-data"
 
+type BuildingTypeKey = keyof typeof BuildingData
+
 export default function Home() {
   const [currentPanel, setCurrentPanel] = useState(0)
   const [buildingInfo, setBuildingInfo] = useState({
@@ -21,7 +23,7 @@ export default function Home() {
     screenerName: "",
     assessmentDate: new Date(),
   })
-  const [selectedBuildingType, setSelectedBuildingType] = useState("")
+  const [selectedBuildingType, setSelectedBuildingType] = useState<BuildingTypeKey | "">("")
   const [severeVerticalIrregularity, setSevereVerticalIrregularity] = useState(false)
   const [moderateVerticalIrregularity, setModerateVerticalIrregularity] = useState(false)
   const [planIrregularity, setPlanIrregularity] = useState(false)
