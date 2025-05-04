@@ -5,11 +5,13 @@ import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
+export type BuildingTypeKey = 'W1' | 'W1A' | 'W2' | 'S1_MRF' | 'S2_BR' | 'S3_LM' | 'S4_RCSW' | 'S5_URMINF' | 'C1_MRF' | 'C2_SW' | 'C3_URMINF' | 'PC1_TU' | 'PC2' | 'RM1_FC' | 'RM2_RD' | 'URM' | 'MH';
+
 interface BuildingTypeProps {
-  selectedBuildingType: string
-  setSelectedBuildingType: React.Dispatch<React.SetStateAction<BuildingTypeKey | "">>
-  onNext: () => void
-  onBack: () => void
+  selectedBuildingType: BuildingTypeKey | '';
+  setSelectedBuildingType: React.Dispatch<React.SetStateAction<BuildingTypeKey | ''>>;
+  onNext: () => void;
+  onBack: () => void;
 }
 
 export default function BuildingType({
